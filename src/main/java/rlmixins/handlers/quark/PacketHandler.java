@@ -8,7 +8,8 @@ import rlmixins.RLMixins;
 public class PacketHandler {
     public static final SimpleNetworkWrapper instance = NetworkRegistry.INSTANCE.newSimpleChannel(RLMixins.MODID);
 
-    public PacketHandler() { }
+    public PacketHandler() {
+    }
 
     public static void init() {
         instance.registerMessage(RightClickSignEditHandler.MessageSyncConfig.Handler.class, RightClickSignEditHandler.MessageSyncConfig.class, 0, Side.CLIENT);
